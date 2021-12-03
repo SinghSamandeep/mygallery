@@ -53,7 +53,7 @@ class _ImageGridState extends State<ImageGrid> {
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: <Widget>[
                           Text(
-                            "JRSworld Innovations",
+                            "MY GALLERY",
                             style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 30,
@@ -107,9 +107,9 @@ class _ImageGridState extends State<ImageGrid> {
                               child: ClipRRect(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(15)),
-                                child: FadeInImage.memoryNetwork(
-                                  placeholder: kTransparentImage,
-                                  image: imageController
+                                child: Image.network(
+
+                                  imageController
                                       .imageGrid[index].imageUrl!,
                                   fit: BoxFit.cover,
                                 ),
